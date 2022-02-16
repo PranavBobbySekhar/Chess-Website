@@ -1,9 +1,6 @@
 html, body {
 margin: 5px;
-padding: 0px;
 border: 0px;
-left: 0px;
-top: 0px;
 font-family: Poppins
 }
 
@@ -23,6 +20,7 @@ a {
 .hover-animation {
   display: inline-block;
   position: relative;
+  margin: 50px;
 }
 
 .hover-animation:after {
@@ -40,7 +38,6 @@ a {
 
 .hover-animation:hover:after {
   transform: scaleX(1);
-  transform-origin: center;
 }
 
 .images {
@@ -50,34 +47,29 @@ a {
 }
 
 .header img {
-  position: relative;
-  float: left;
-  width:150px;
-  height:150px;
-  left: 30px;
+  position: absolute;
+  width:200px;
+  height:200px;
+  left: 150px;
   top: 30px;
 }
 
-.header h4 {
+.header a {
+  display: inline;
+}
+
+.header-text {
   position: relative;
-  top: 25px;
-  bottom: 25px;
-  left: 350px;
+  font-size: 120%;
 }
 
 .indexheading {
   position: relative;
-  left: 375px;
-  top: 10px;
-  bottom: 10px;
   display: block;
 }
 
 .rulesheading {
   position: relative;
-  left: 425px;
-  top: 10px;
-  bottom: 10px;
   display: block;
 }
 
