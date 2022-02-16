@@ -1,76 +1,74 @@
-<html>
+html, body {
+margin: 5px;
+border: 0px;
+font-family: Poppins
+}
 
-<head>
+body {
+  background-image: url("pics/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-size: 150%;
+}
 
-<title>ChessWebsite</title>
+a {
+  color: green;
+}
 
-<meta name="description" content="School Html Webpage Making Assignment">
-<meta name="author" content="Pranav Bobby Sekhar">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+.hover-animation {
+  display: inline-block;
+  position: relative;
+  margin: 40px;
+}
 
-<link rel="icon" type="image/x-icon" href="pics/icon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+.hover-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
 
-</head>
+.hover-animation:hover:after {
+  transform: scaleX(1);
+}
 
-<body>
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-<div class="header">
-<a href="index.html"><img src="pics/logo.png"></a>
-<div class="header-text" align="center"><b><a href="index.html" class="hover-animation" target="_blank" style="text-decoration: none">Home</a> <a href="rules.html" class="hover-animation" target="_blank" style="text-decoration: none">Rules</a> <a href="unusualrules.html" class="hover-animation" target="_blank" style="text-decoration: none">Unusual Rules</a><a href="#contact" class="hover-animation" style="text-decoration: none">Contact</a> </b></div>
-</div>
+.header img {
+  position: absolute;
+  width:200px;
+  height:200px;
+  left: 150px;
+  top: 30px;
+}
 
-<div class="heading"><h1 align="center"><u>The Game of Chess</u></h1></div>
-<div class="subheading"><h2 align="center"><u>What is Chess?</u></h2></div>
+.header a {
+  display: inline;
+}
 
-<ul>
+.header-text {
+  position: relative;
+  font-size: 120%;
+}
 
-<li><p>Chess is a board game played between two players. It is sometimes called Western chess, or International chess to distinguish it from related games such as <a href="https://en.wikipedia.org/wiki/Xiangqi" target="_blank" style="text-decoration:none">xiangqi</a> and <a href="https://en.wikipedia.org/wiki/Shogi" target="_blank" style="text-decoration:none">shogi</a>.</p></li>
+.rickroll {
+  position: relative;
+  left: 200px;
+  top: 0px;
+}
 
-<li><p>Chess is an abstract strategy game and involves no hidden information.</p></li> 
-
-<li><p>It is played on a square chessboard with 64 squares arranged in an eight-by-eight grid.</p></li>
-
-<li><p>At the start, each player (one controlling the white pieces, the other controlling the black pieces) controls sixteen pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns.</p></li>
-
-<li> <p>The object of the game is to checkmate the opponent's king, whereby the king is under immediate attack (in "check") and there is no way for it to escape.</p></li>
-
-<li> <p>There are also several ways a game can end in a draw.</p></li>
-
-</ul>
-
-<h2 align="center"><u>Governing Body</u></h2>
-
-<p align="center">The rules of chess are published by <a href="https://www.fide.com/" target="_blank" style="text-decoration:none">FIDE</a> (Fédération Internationale des Échecs), chess's international governing body, in its Handbook. Rules published by national governing bodies, or by unaffiliated chess organizations, commercial publishers, etc., may differ in some details. FIDE's rules were most recently revised in 2018.</p>
-<br>
-
-<center><a href="https://www.fide.com/" target="_blank"><img src="https://imgur.com/7F7UKtG.jpg"></a></center>
-
-<h2 align="center"><u>Setup of the pieces</u></h2>
-
-<center><img src="https://imgur.com/nf8CWvq.jpg" width = "500px" height = "500px"></center>
-
-<ol>
-
-<li>Chess pieces are divided into two different colored sets.</li>
-
-<li>While the sets may not be literally white and black, they are always referred to as "white" and "black". The players of the sets are referred to as White and Black, respectively.</li>
-
-<li>Each set consists of 16 pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns.</li>
-
-<li>The game is played on a square board of eight rows (called ranks) and eight columns (called files).</li>
-
-<li>The pieces are set out as shown in the diagram and photo.</li>
-
-<li>The board is placed with a light square at the right-hand corner nearest to each player.</li>
-
-</ol>
-
-<div id="contact"><h6 align="center" >Have a query or want to report a bug? Contact us at <a href="mailto:contactchesswebsite@gmail.com" target="_blank" style="text-decoration: none">contactchesswebsite@gmail.com</a></h6></div>
-
-</body>
-
-</html>
+.contact {
+  font-size: 120%;
+}
