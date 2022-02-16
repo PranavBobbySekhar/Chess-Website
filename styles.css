@@ -20,7 +20,7 @@ a {
 .hover-animation {
   display: inline-block;
   position: relative;
-  margin: 50px;
+  margin: 40px;
 }
 
 .hover-animation:after {
@@ -63,18 +63,12 @@ a {
   font-size: 120%;
 }
 
-.indexheading {
-  position: relative;
-  display: block;
-}
-
-.rulesheading {
-  position: relative;
-  display: block;
-}
-
 .rickroll {
   position: relative;
   left: 200px;
   top: 0px;
+}
+
+.contact {
+  font-size: 120%;
 }
