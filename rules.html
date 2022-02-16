@@ -4,29 +4,6 @@
 
 <title>ChessWebsite</title>
 
-<style> 
-
-body {
-  background-image: url("pics/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: lightgreen;
-  font-size: 150%;
-}
-
-a {
-  color: darkgreen;
-}
-
-.images {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-</style>
-
 <link rel="icon" type="image/x-icon" href="pics/icon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,9 +14,11 @@ a {
 
 <body>
 
-<center><h4><a href="index.html" target="_blank" style="text-decoration:none">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="rules.html" target="_blank" style="text-decoration:none">Rules of Chess</a></h4></center>
+<div class="header">
+<a href="index.html"><img src="pics/logo.png"></a>
+<h4><a href="index.html" target="_blank" style="text-decoration:none" class="hover-animation">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="rules.html" target="_blank" style="text-decoration:none" class="hover-animation">Rules of Chess</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="pics/unusualrules.mp4" target="_blank" style="text-decoration:none" class="hover-animation">Unusual Rules</a></h4></div>
 
-<center><h1><u>Rules of Chess</u></h1></center>
+<div class="rulesheading"><h1><u>Rules of Chess</u></h1></div>
 
 <center><h2><u>Movement of the pieces</u></h2></center>
 
@@ -59,7 +38,7 @@ a {
 
 <ol>
 
-<li>Kings move one square in any direction, so long as that square is not attacked by an enemy piece. Additionally, kings are able to make a special move, known as castling.</li>
+<li>Kings move one square in any direction, so long as that square is not attacked by an enemy piece. Additionally, kings are able to make a special move, known as castling.</li><br>
 
 <img src="https://imgur.com/ypOqOQJ.jpg" width="500px" height="500px" class="images"><br>
 
