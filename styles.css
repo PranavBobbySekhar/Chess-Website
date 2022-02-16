@@ -6,3 +6,77 @@ left: 0px;
 top: 0px;
 font-family: Poppins
 }
+
+body {
+  background-image: url("pics/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-size: 150%;
+}
+
+a {
+  color: green;
+}
+
+.hover-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.hover-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header img {
+  position: relative;
+  float: left;
+  width:150px;
+  height:150px;
+  left: 30px;
+  top: 30px;
+}
+
+.header h4 {
+  position: relative;
+  top: 25px;
+  bottom: 25px;
+  left: 350px;
+}
+
+.indexheading {
+  position: relative;
+  left: 375px;
+  top: 10px;
+  bottom: 10px;
+  display: block;
+}
+
+.rulesheading {
+  position: relative;
+  left: 425px;
+  top: 10px;
+  bottom: 10px;
+  display: block;
+}
