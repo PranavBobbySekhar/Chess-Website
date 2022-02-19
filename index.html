@@ -6,7 +6,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="icon" type="image/png" href="pics/icon.png">
+        <link rel="icon" href="pics/icon.png">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,14 +22,22 @@
             <nav>
 
                 <h1><a href="index.html">ChessWebsite.com</a></h1>
-
-                <div class="nav-links">
-                    
-                    <a href="">Why Chess?</a>
-                    <a href="">How to play Chess</a>
-                    <a href="">Info on Chess</a>
-
+                <div class="nav-links" id="navLinks">     
+                <div class="closebtn" onclick="hideMenu()"><img src="pics/close.png"></div>
+                    <ul>
+                        <li><a href="#whychess"><b>Why Chess?</b></a></li>
+                        <li><a href=""><b>How to play Chess</b></a></li>
+                        <li><a href=""><b>Info on Chess</b></a>
+                            <div id="info-dropdown">
+                                <ul>
+                                    <li>Governing Body</li>
+                                    <li>Champions</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <div class="menubtn" onclick="showMenu()"><img src="pics/list.png" alt="Menu Button"></div>
 
             </nav>
             
@@ -115,6 +123,20 @@
             </div>
             
         </section>
+        
+        <script>
+            
+            menu = document.getElementById("navLinks")
+            
+            function showMenu(){
+                menu.style.left = "-100px";
+            }
+            
+            function hideMenu(){
+                menu.style.left = "-350px";
+            }
+            
+        </script>
         
     </body>
     
