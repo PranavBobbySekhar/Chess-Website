@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 150%;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(pics/background.jpg);
+    background-size: cover; 
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    font-size: 80%;
+    margin-left: 60px;
+    text-decoration: none;
+    color: orange;
+    transition: 0.5s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+nav h1 a {
+    font-size: 120%;
+    color: red;
+    text-decoration: none;
+}
+
+.main-text {
+    font-size: 130%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}
+
+.readmorebtn a {
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+.readmorebtn {
+    display: inline-block;
+    border: 1px solid;
+    padding: 1% 5%;
+    background-color: transparent;
+    transition: 1s;
+}
+
+.readmorebtn:hover {
+    background-color: red;
+}
+
+.whychess {
+    height: 100vh;
+    background-color: lightyellow;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 140%;
+}
+
+.text-boxes {
+    padding: 20px;
+}
+
+.row-1 {
+    justify-content: space-between;
+    align-content: center;
+    display: flex;    
+}
+
+.row-2 {
+    justify-content: space-between;
+    align-content: center;
+    display: flex;    
+}
+
+.text-box {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    background-color: #FFD580;
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 82%;
+}
+
+.text-box p {
+    font-size: 72%;
+}
+
+@media(max-width:700px) {
+    .row-1 {
+        flex-direction: column;
+    }
+    
+    .row-2 {
+        flex-direction: column;
+    }
+}
