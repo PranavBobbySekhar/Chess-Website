@@ -14,21 +14,27 @@ body {
     width: 100%;
     background-image: url(pics/background.jpg);
     background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 nav {
-    padding: 20px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 80%;
 }
 
 .nav-links a {
-    font-size: 80%;
     margin-left: 60px;
     text-decoration: none;
     color: orange;
     transition: 0.5s;
+}
+
+.nav-links li {
+    display: inline-block;
+    list-style: none;
 }
 
 .nav-links a:hover {
@@ -112,4 +118,99 @@ nav h1 a {
 
 .text-box p {
     font-size: 72%;
+}
+
+#info-dropdown {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#info-dropdown li{
+    visibility: hidden;
+    margin: 10px;
+    padding: 20px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.closebtn {
+    display: none;
+}
+
+.menubtn {
+    display: none;
+}
+
+@media(max-width:700px) {
+    body {
+        font-size: 120%;
+    }
+    
+    nav h1 {
+        display: none;
+    }
+    
+    .nav-links {
+        position: absolute;
+        left: -350px;
+        top: 0px;
+        font-size: 130%;
+        z-index: 2;
+        background-color: red;
+        height: 100vh;
+        transition: 1s;
+    }
+    
+    .nav-links li {
+        display: block;        
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 20px;
+        text-align: left;
+        font-size: 110%;
+    }
+    
+    .closebtn {
+        display: block;
+    }
+    
+    .menubtn {
+        display: block;
+    }
+    
+    .closebtn img{
+        display: block;
+        width: 20px;
+        height: auto;
+        position: absolute;
+        left: 110px;
+        padding-top: 10px;
+    }
+    
+    .menubtn img {
+        display: block;
+        width: 30px;
+        height: auto;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .row-1 {
+        flex-direction: column;
+        display: block;
+    }
+    
+    .row-2 {
+        flex-direction: column;
+        display: block;
+    }
+    
+    .text-box {
+    width: 50vh;
+    height: auto;
+    background-color: #FFD580;
+    text-align: center;
+}
 }
