@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -65,7 +69,7 @@ nav h1 a {
     background-color: red;
 }
 
-.whychess {
+#whychess {
     height: 100vh;
     background-color: lightyellow;
 }
@@ -108,14 +112,4 @@ nav h1 a {
 
 .text-box p {
     font-size: 72%;
-}
-
-@media(max-width:700px) {
-    .row-1 {
-        flex-direction: column;
-    }
-    
-    .row-2 {
-        flex-direction: column;
-    }
 }
