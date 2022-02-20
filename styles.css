@@ -166,6 +166,7 @@ nav h1 a {
     margin: 20px;
     background-color: #FFD580;
     text-align: center;
+    transition: 0.5s;
 }
 
 .text-box h1 {
@@ -174,6 +175,10 @@ nav h1 a {
 
 .text-box p {
     font-size: 72%;
+}
+
+.text-box:hover {
+    box-shadow: 0 0 15px 10px rgba(128, 128, 128, 0.3)
 }
 
 /* Text Boxes : End*/
