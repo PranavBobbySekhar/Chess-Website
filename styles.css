@@ -9,6 +9,8 @@ body {
     font-size: 150%;
 }
 
+/* Section - Main */
+
 .main {
     height: 100vh;
     width: 100%;
@@ -16,6 +18,8 @@ body {
     background-size: cover; 
     background-repeat: no-repeat;
 }
+
+/* Navigation */
 
 nav {
     padding: 30px;
@@ -32,6 +36,14 @@ nav {
     transition: 0.5s;
 }
 
+.nav-links p {
+    margin-left: 60px;
+    text-decoration: none;
+    color: orange;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .nav-links li {
     display: inline-block;
     list-style: none;
@@ -41,11 +53,43 @@ nav {
     color: red;
 }
 
+.nav-links p:hover {
+    color: red;
+}
+
 nav h1 a {
     font-size: 120%;
     color: red;
     text-decoration: none;
 }
+
+/* Navigation : End */
+
+/* Sub Menus for Navigation */
+
+.sub-menu ul li{
+    display: none;
+}
+
+.sub-menu ul {
+    position: absolute;
+    right: 18px;
+}
+
+.nav-links ul li:hover .sub-menu ul li {
+    display: block;
+    text-align: center;
+    padding-top: 30px;    
+}
+
+.nav-links ul li:hover .sub-menu ul li a {
+    background-color: blue;
+    padding: 10px;
+}
+
+/* Sub Menus for Navigation : End */
+
+/* Main Text of Header */
 
 .main-text {
     font-size: 130%;
@@ -75,10 +119,18 @@ nav h1 a {
     background-color: red;
 }
 
+/* Main Text of Main Section : End */
+
+/* Section - Main : End */
+
+/* Section - WhyChess */
+
 #whychess {
     height: 100vh;
     background-color: lightyellow;
 }
+
+/* Heading of WhyChess Section */
 
 .heading {
     display: block;
@@ -86,6 +138,10 @@ nav h1 a {
     padding: 20px;
     font-size: 140%;
 }
+
+/* Heading of WhyChess Section : End */
+
+/* Text Boxes */
 
 .text-boxes {
     padding: 20px;
@@ -120,20 +176,9 @@ nav h1 a {
     font-size: 72%;
 }
 
-#info-dropdown {
-    position: absolute;
-    color: white;
-    text-align: center;
-    margin-right: 50px;
-}
+/* Text Boxes : End*/
 
-#info-dropdown li{
-    visibility: hidden;
-    margin: 10px;
-    padding: 20px;
-    background-color: red;
-    transition: 0.5s;
-}
+/* Elements needed for smaller screens */
 
 .closebtn {
     display: none;
@@ -143,10 +188,16 @@ nav h1 a {
     display: none;
 }
 
+/* Elements needed for smaller screens : End*/
+
+/* CSS properties for smaller screens */
+
 @media(max-width:700px) {
     body {
         font-size: 120%;
     }
+    
+    /* Navigation */
     
     nav h1 {
         display: none;
@@ -197,6 +248,10 @@ nav h1 a {
         left: 10px;
     }
     
+    /* Navigation : End*/
+    
+    /* WhyChess Text Boxes display */
+    
     .row-1 {
         flex-direction: column;
         display: block;
@@ -212,5 +267,9 @@ nav h1 a {
     height: auto;
     background-color: #FFD580;
     text-align: center;
+    }
+    
+    /* WhyChess Text Boxes display : End*/
 }
-}
+
+/* CSS properties for smaller screens : End*/
