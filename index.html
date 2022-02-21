@@ -1,275 +1,186 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-size: 120%;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: 0.5s
-}
-
-.main {
-    background-image: url(pics/background.jpg);
-    background-size: cover;
-    height: 100vh;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    padding: 10px;
-    position: absolute;
-}
-
-.logo {
-    display: flex;
-    font-size: 35px;
-    align-items: center;
-    margin-right: 570px;
-}
-
-.logo img {
-    width: 80px;
-    margin-right: 20px;
-}
-
-.menu-btn img {
-    display: none;
-}
-
-.menu ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    color: orange;
-}
-
-.menu ul li {
-    padding-left: 45px;
-}
-
-.sub-menu {
-    position: absolute;
-    background-color: blue;
-    border-radius: 5px;
-    right: 0px;
-    width: 140px;
-}
-
-.sub-menu ul {
-    padding: 10px;
-    margin-left: -45px;
-    display: none;
-    text-align: center;
+<html>
     
-}
-
-.sub-menu ul li {
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.seperation {
-    background-color: white;
-    height: 2px;
-    width: 120px;
-    margin: 0 auto;
-    transform: translate(18%)
-}
-
-.main-seperation {
-    display: none;
-}
-
-.menu ul img {
-    display: none;
-}
-
-.menu ul li:hover .sub-menu ul {
-    display: block;
-}
-
-.menu a:hover {
-    color: red;
-}
-
-.main-text {
-    font-size: 142%;
-    position: absolute;
-    display: block;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.readmore-btn {
-    position: absolute;
-    margin-top: 20px;
-    padding: 10px;
-    border: 2px solid white;
-    text-align: center;
-    width: 190px;
-    left: 50%;
-    transform: translate(-50%);
-    transition: 0.7s;
-    border-radius: 10px;
-}
-
-.readmore-btn:hover {
-    background-color: orange;
-}
-
-.whychess {
-    height: 100vh;
-    color: black;
-    padding: 10px;
-    background-color: lightyellow;
-}
-
-.heading h1 {
-    text-align: center;
-    font-size: 150%;
-}
-
-.row {
-    display: flex;
-    justify-content: space-around;
-}
-
-.text-box {
-    font-size: 85%;
-    text-align: center;
-    background-color: orange;
-    margin: 20px;
-    padding: 15px;
-    width: 400px;
-    border-radius: 15px;
-    transition: 0.7s;
-}
-
-.text-box:hover {
-    box-shadow: 0 0 20px 0px grey;
-}
-
-.text-box h1 {
-    margin-bottom: 15px;
-}
-
-.footer {
-    height: 10vh;
-}
-
-.contact {
-    display: block;
-    color: black;
-    text-align: center;
-    font-size: 140%;
-    position: absolute;
-    top: 205%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.contact a {
-    color: indianred;
-}
-
-.contact a:hover {
-    color: red;
-}
-
-@media(max-width:700px) {
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
+    <head>
+        
+        <title>ChessWebsite</title>
+        
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="icon" href="pics/icon.png">
+        
+    </head>
     
-    body {
-        font-size: 70%;
-    }
-    
-    .header {
-        position: relative;
-    }
-    
-    .logo {
-        position: absolute;
-        display: flex;
-        font-size: 20px;
-        align-items: center;
-        margin-top: 75px;
-    }
+    <body>
+        
+        <section class="main">
+            
+            <div class="header">
 
-    .logo img {
-        width: 80px;
-        margin-right: 20px;
-    }
+                <div class="logo"><a href="index.html"><img src="pics/icon.png" alt="logo"></a><a href="index.html">ChessWebsite.com</a></div>
+                
+                <div class="menu" id="navMenu">
     
-    .menu-btn img {
-        position: absolute;
-        width: 40px;
-        display: flex;
-        right: 0px;
-        top: 0px;
-        margin: 20px;
-    }
-    
-    .menu {
-        display: none;
-        width: 30vh;
-        height: 100vh;
-        top: 0px;
-        right: -200px;
-        position: absolute;
-        background-color: blue;
-        z-index: 2;
-        transition: 0.5s;
-    }
-    
-    .menu ul {
-        font-size: 190%;
-        display: block;
-        text-align: left;
-        transform: translate(-15%, 20%);
-    }
-    
-    .menu ul li {
-        margin-top: 10px;
-    }
-    
-    .menu ul img {
-        display: block;
-        transform: translate(170%, -60%);
-        width: 25px;
-    }
-    
-    .sub-menu {
-        visibility: hidden;
-    }
-    
-    .row {
-        flex-direction: column;
-    }
-    
-    .text-box {
-        width: 90%;
-    }
-}
+                    <ul>
+                        <img src="pics/close.png" alt="close-button" onclick="hideMenu()">
+                        <li><a href="#whyChess">Why Chess?</a></li>
+                        <div class="main-seperation"></div>
+                        <li><a href="https://lichess.org/learn#/" target="_blank">Learn Chess</a></li>
+                        <div class="main-seperation"></div>
+                        <li><a href="https://en.wikipedia.org/wiki/Chess" target="_blank">About Chess</a>
+                        <div class="main-seperation"></div>    
+                        
+                            <div class="sub-menu">
+                            
+                                <ul>
+                                
+                                    <li><a href="https://en.wikipedia.org/wiki/FIDE" target="_blank">Governing Body</a></li>
+                                    
+                                    <div class="seperation"></div>
+                                    
+                                    <li><a href="https://simple.wikipedia.org/wiki/List_of_World_Chess_Champions" target="_blank">Champions</a></li>
+                                
+                                </ul>
+                            
+                            </div>
+                        
+                        </li>
+                    
+                    </ul>
+                    
+                </div>
+                
+                <div class="menu-btn"><img src="pics/list.png" alt="menu-button" onclick="showMenu()"></div>
+                
+            </div>
+            
+            <div class="main-text">
 
+                <h1><b>What is ChessWebsite.com?</b></h1>
 
-
+                <p>ChessWebsite.com is a website dedicated to spread the joy of chess to people around the world.</p>
+                
+                <a href="#whyChess"><div class="readmore-btn">
+            
+                    <p>Read More</p>
+            
+                </div></a>
+                
+            </div>
+            
+        </section>
+        
+        <section class="whychess" id="whyChess">
+        
+            <div class="heading">
+            
+                <h1>Why Chess?</h1>
+            
+            </div>
+            
+            <div class="row">
+            
+                <div class="text-box">
+                
+                    <h1>Chess is a game for people of all ages</h1>
+                    
+                    <p>You can learn to play at any age and in chess, unlike in many other sports, you don't ever have to retire. Age is also not a factor when you're looking for an opponent --young can play old and old can play young.</p>
+                
+                </div>
+                
+                <div class="text-box">
+                
+                    <h1>Chess develops memory</h1>
+                    
+                    <p>The chess theory is complicated and many players memorize different opening variations. You will also learn to recognize various patterns and remember lengthy variations.</p>
+                
+                </div>
+                
+                <div class="text-box">
+                
+                    <h1>Chess improves concentration</h1>
+                    
+                    <p>During the game you are focused on only one main goal -- to checkmate and become the victor.</p>
+                
+                </div>
+                
+                <div class="text-box">
+                
+                    <h1>Chess promotes imagination and creativity.</h1>
+                    
+                    <p>It encourages you to be inventive. There are an indefinite amount of beautiful combinations yet to be constructed.</p>
+                
+                </div>
+            
+            </div>
+            
+            <div class="row">
+            
+                <div class="text-box">
+                
+                    <h1>Chess teaches independence</h1>
+                    
+                    <p>You are forced to make important decisions influenced only by your own judgment.</p>
+                
+                </div>
+                
+                <div class="text-box">
+                
+                    <h1>Chess inspires self-motivation</h1>
+                    
+                    <p>It encourages the search of the best move, the best plan, and the most beautiful continuation out of the endless possibilities. It encourages the everlasting aim towards progress, always steering to ignite the flame of victory.</p>
+                
+                </div>
+                
+                <div class="text-box">
+                
+                    <h1>Chess and Science</h1>
+                    
+                    <p>Chess develops the scientific way of thinking. While playing, you generate numerous variations in your mind. You explore new ideas, try to predict their outcomes and interpret surprising revelations. You decide on a hypothesis, and then you make your move and test it.</p>
+                
+                </div>
+                
+                <div class="text-box">
+                
+                    <h1>Chess and Mathematics</h1>
+                    
+                    <p>You don't have to be a genius to figure this one out. Chess involves an infinite number of calculations, anything from counting the number of attackers and defenders in the event of a simple exchange to calculating lengthy continuations. And you use your head to calculate, not some little machine.</p>
+                
+                </div>
+            
+            </div>
+        
+        </section>
+        
+        <section class="footer">
+        
+            <div class="contact">
+            
+                <h5>Have a query or request? Send your message to <a href="mailto:contactchesswebsite@gmail.com">contactchesswebsite@gmail.com</a></h5>
+            
+            </div>
+        
+        </section>
+        
+        <script>
+        
+            menu = document.getElementById("navMenu")
+            
+            function showMenu(){
+                menu.style.display = "block";
+                menu.style.right = "0px";
+            }
+            
+            function hideMenu(){
+                menu.style.display = "none";
+                menu.style.right = "-200px";
+            }
+        
+        </script>        
+        
+    </body>
+    
+</html>
