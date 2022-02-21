@@ -9,6 +9,8 @@ html {
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-size: 120%;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -201,6 +203,11 @@ a {
         font-size: 70%;
     }
     
+    .main {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
     .header {
         position: relative;
     }
@@ -228,7 +235,7 @@ a {
     }
     
     .menu {
-        display: none;
+        display: block;
         width: 30vh;
         height: 100vh;
         top: 0px;
