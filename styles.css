@@ -289,6 +289,22 @@ header {
     .text-box {
         width: 90%;
     }
+    
+    .footer {
+        display: flex;
+        height: 10vh;
+        background-color: lightblue;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact {
+        display: flex;
+        text-align: center;
+        width: 50vh;
+        color: black;
+        font-size: 140%;
+    }
 }
 
 
