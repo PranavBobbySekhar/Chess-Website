@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 120%;
     font-family: 'Poppins', sans-serif;
@@ -20,7 +24,6 @@ a {
     background-image: url(pics/background.jpg);
     background-size: cover;
     height: 100vh;
-    width: 100%;
 }
 
 .header {
@@ -130,10 +133,50 @@ a {
     background-color: orange;
 }
 
+.whychess {
+    height: 100vh;
+    color: black;
+    padding: 10px;
+    background-color: lightyellow;
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 150%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-box {
+    font-size: 85%;
+    text-align: center;
+    background-color: orange;
+    margin: 20px;
+    padding: 15px;
+    width: 400px;
+    border-radius: 15px;
+    transition: 0.7s;
+}
+
+.text-box:hover {
+    box-shadow: 0 0 20px 0px grey;
+}
+
+.text-box h1 {
+    margin-bottom: 15px;
+}
+
 @media(max-width:700px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
     body {
         font-size: 70%;
-        overflow: hidden;
     }
     
     .header {
@@ -159,7 +202,7 @@ a {
         display: flex;
         right: 0px;
         top: 0px;
-        margin: 10px;
+        margin: 20px;
     }
     
     .menu {
@@ -194,4 +237,15 @@ a {
     .sub-menu {
         visibility: hidden;
     }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .text-box {
+        width: 90%;
+    }
 }
+
+
+
