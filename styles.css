@@ -19,7 +19,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 .main {
@@ -35,7 +35,7 @@ header {
     align-items: center;
     font-weight: bold;
     padding: 10px;
-    background-color: blue;
+    background-color: rgba(45, 85, 255, 0.93);
     z-index: 2;
 }
 
@@ -162,9 +162,13 @@ header {
     background-color: orange;
     margin: 20px;
     padding: 15px;
-    width: 400px;
+    width: 30%;
     border-radius: 15px;
     transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-box:hover {
