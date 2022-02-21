@@ -172,17 +172,17 @@ a {
 }
 
 .footer {
+    display: flex;
     height: 10vh;
     background-color: lightblue;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact {
-    display: block;
+    display: flex;
     color: black;
-    text-align: center;
     font-size: 140%;
-    margin-left: 50%;
-    transform: translate(-50%)
 }
 
 .contact a {
