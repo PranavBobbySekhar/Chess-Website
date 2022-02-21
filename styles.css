@@ -29,17 +29,23 @@ a {
     align-items: center;
     font-weight: bold;
     padding: 10px;
+    position: absolute;
 }
 
 .logo {
     display: flex;
     font-size: 35px;
     align-items: center;
+    margin-right: 570px;
 }
 
 .logo img {
     width: 80px;
     margin-right: 20px;
+}
+
+.menu-btn img {
+    display: none;
 }
 
 .menu ul{
@@ -57,7 +63,7 @@ a {
     position: absolute;
     background-color: blue;
     border-radius: 5px;
-    right: 12px;
+    right: 0px;
     width: 140px;
 }
 
@@ -130,6 +136,10 @@ a {
         overflow: hidden;
     }
     
+    .header {
+        position: relative;
+    }
+    
     .logo {
         position: absolute;
         display: flex;
@@ -185,6 +195,3 @@ a {
         visibility: hidden;
     }
 }
-
-
-
