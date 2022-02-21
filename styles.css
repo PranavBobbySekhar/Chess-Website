@@ -28,13 +28,15 @@ a {
     height: 100vh;
 }
 
-.header {
+header {
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
     padding: 10px;
-    position: absolute;
+    background-color: blue;
+    z-index: 2;
 }
 
 .logo {
@@ -111,8 +113,10 @@ a {
 
 .main-text {
     font-size: 142%;
-    position: absolute;
-    display: block;
+    width: 900px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -208,8 +212,9 @@ a {
         overflow: hidden;
     }
     
-    .header {
+    header {
         position: relative;
+        background-color: transparent;
     }
     
     .logo {
@@ -268,7 +273,9 @@ a {
     }
     
     .main-text {
-        font-size: 190%;
+        font-size: 170%;
+        width: 90%;
+        transform: translate(-50%, -70%);
     }
     
     .row {
