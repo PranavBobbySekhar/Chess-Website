@@ -1,280 +1,190 @@
-html {
-    scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    font-size: 120%;
     font-family: 'Poppins', sans-serif;
-    font-size: 150%;
+    color: white;
 }
 
-/* Section - Main */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s
+}
 
 .main {
+    background-image: url(pics/background.jpg);
+    background-size: cover;
     height: 100vh;
     width: 100%;
-    background-image: url(pics/background.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat;
 }
 
-/* Navigation */
-
-nav {
-    padding: 30px;
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 80%;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.nav-links a {
-    margin-left: 60px;
-    text-decoration: none;
-    color: orange;
-    transition: 0.5s;
+.logo {
+    display: flex;
+    font-size: 35px;
+    align-items: center;
 }
 
-.nav-links p {
-    margin-left: 60px;
-    text-decoration: none;
-    color: orange;
-    transition: 0.5s;
-    cursor: pointer;
+.logo img {
+    width: 80px;
+    margin-right: 20px;
 }
 
-.nav-links li {
-    display: inline-block;
+.menu ul{
+    display: flex;
+    justify-content: space-between;
     list-style: none;
+    color: orange;
 }
 
-.nav-links a:hover {
-    color: red;
+.menu ul li {
+    padding-left: 45px;
 }
 
-.nav-links p:hover {
-    color: red;
-}
-
-nav h1 a {
-    font-size: 120%;
-    color: red;
-    text-decoration: none;
-}
-
-/* Navigation : End */
-
-/* Sub Menus for Navigation */
-
-.sub-menu ul li{
-    display: none;
+.sub-menu {
+    position: absolute;
+    background-color: blue;
+    border-radius: 5px;
+    right: 12px;
+    width: 140px;
 }
 
 .sub-menu ul {
-    position: absolute;
-    right: 18px;
-}
-
-.nav-links ul li:hover .sub-menu ul li {
-    display: block;
-    text-align: center;
-    padding-top: 30px;    
-}
-
-.nav-links ul li:hover .sub-menu ul li a {
-    background-color: blue;
     padding: 10px;
+    margin-left: -45px;
+    display: none;
+    text-align: center;
+    
 }
 
-/* Sub Menus for Navigation : End */
+.sub-menu ul li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 
-/* Main Text of Header */
+.seperation {
+    background-color: white;
+    height: 2px;
+    width: 120px;
+    margin: 0 auto;
+    transform: translate(18%)
+}
+
+.main-seperation {
+    display: none;
+}
+
+.menu ul img {
+    display: none;
+}
+
+.menu ul li:hover .sub-menu ul {
+    display: block;
+}
+
+.menu a:hover {
+    color: red;
+}
 
 .main-text {
-    font-size: 130%;
-    color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    font-size: 142%;
     position: absolute;
-}
-
-.readmorebtn a {
-    color: white;
-    text-decoration: none;
-    font-size: 90%;
-}
-
-.readmorebtn {
-    display: inline-block;
-    border: 2px solid;
-    padding: 1% 5%;
-    background-color: transparent;
-    transition: 1s;
-}
-
-.readmorebtn:hover {
-    background-color: red;
-}
-
-/* Main Text of Main Section : End */
-
-/* Section - Main : End */
-
-/* Section - WhyChess */
-
-#whychess {
-    height: 100vh;
-    background-color: #FFFEC0;
-}
-
-/* Heading of WhyChess Section */
-
-.heading {
     display: block;
     text-align: center;
-    padding: 20px;
-    font-size: 140%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
-/* Heading of WhyChess Section : End */
-
-/* Text Boxes */
-
-.text-boxes {
-    padding: 20px;
-}
-
-.row-1 {
-    justify-content: space-between;
-    align-content: center;
-    display: flex;    
-}
-
-.row-2 {
-    justify-content: space-between;
-    align-content: center;
-    display: flex;    
-}
-
-.text-box {
-    width: 400px;
-    height: auto;
+.readmore-btn {
+    position: absolute;
+    margin-top: 20px;
     padding: 10px;
-    margin: 20px;
-    background-color: #FFD580;
+    border: 2px solid white;
     text-align: center;
-    transition: 0.5s;
+    width: 190px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.7s;
 }
 
-.text-box h1 {
-    font-size: 82%;
+.readmore-btn:hover {
+    background-color: orange;
 }
-
-.text-box p {
-    font-size: 72%;
-}
-
-.text-box:hover {
-    box-shadow: 0 0 15px 10px rgba(128, 128, 128, 0.3)
-}
-
-/* Text Boxes : End*/
-
-/* Elements needed for smaller screens */
-
-.closebtn {
-    display: none;
-}
-
-.menubtn {
-    display: none;
-}
-
-/* Elements needed for smaller screens : End*/
-
-/* CSS properties for smaller screens */
 
 @media(max-width:700px) {
     body {
-        font-size: 120%;
+        font-size: 70%;
+        overflow: hidden;
     }
     
-    /* Navigation */
-    
-    nav h1 {
-        display: none;
-    }
-    
-    .nav-links {
+    .logo {
         position: absolute;
-        left: -350px;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        margin-top: 75px;
+    }
+
+    .logo img {
+        width: 80px;
+        margin-right: 20px;
+    }
+    
+    .menu-btn img {
+        position: absolute;
+        width: 40px;
+        display: flex;
+        right: 0px;
         top: 0px;
-        font-size: 130%;
-        z-index: 2;
-        background-color: red;
+        margin: 10px;
+    }
+    
+    .menu {
+        display: none;
+        width: 30vh;
         height: 100vh;
-        transition: 1s;
+        top: 0px;
+        right: -200px;
+        position: absolute;
+        background-color: blue;
+        z-index: 2;
+        transition: 0.5s;
     }
     
-    .nav-links li {
-        display: block;        
-        padding-top: 30px;
-        padding-left: 10px;
-        padding-right: 20px;
+    .menu ul {
+        font-size: 190%;
+        display: block;
         text-align: left;
-        font-size: 110%;
+        transform: translate(-15%, 20%);
     }
     
-    .closebtn {
+    .menu ul li {
+        margin-top: 10px;
+    }
+    
+    .menu ul img {
         display: block;
+        transform: translate(170%, -60%);
+        width: 25px;
     }
     
-    .menubtn {
-        display: block;
+    .sub-menu {
+        visibility: hidden;
     }
-    
-    .closebtn img{
-        display: block;
-        width: 20px;
-        height: auto;
-        position: absolute;
-        left: 110px;
-        padding-top: 10px;
-    }
-    
-    .menubtn img {
-        display: block;
-        width: 30px;
-        height: auto;
-        position: absolute;
-        left: 10px;
-    }
-    
-    /* Navigation : End*/
-    
-    /* WhyChess Text Boxes display */
-    
-    .row-1 {
-        flex-direction: column;
-        display: block;
-    }
-    
-    .row-2 {
-        flex-direction: column;
-        display: block;
-    }
-    
-    .text-box {
-    width: 50vh;
-    height: auto;
-    background-color: #FFD580;
-    text-align: center;
-    }
-    
-    /* WhyChess Text Boxes display : End*/
 }
 
-/* CSS properties for smaller screens : End*/
+
+
