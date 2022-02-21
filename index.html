@@ -4,139 +4,89 @@
         
         <title>ChessWebsite</title>
         
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         
-        <link rel="icon" href="pics/icon.png">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         
     </head>
     
     <body>
+        
+        <div class="main">
             
-        <section class="main">
+            <div class="header">
 
-            <nav>
-
-                <h1><a href="index.html">ChessWebsite.com</a></h1>
-                <div class="nav-links" id="navLinks">     
-                <div class="closebtn" onclick="hideMenu()"><img src="pics/close.png"></div>
+                <div class="logo"><a href="index.html"><img src="pics/icon.png" alt="logo"></a><a href="index.html">ChessWebsite.com</a></div>
+                
+                <div class="menu" id="navMenu">
+    
                     <ul>
-                        <li><a href="#whychess"><b>Why Chess?</b></a></li>
-                        <li><a href=""><b>How to play Chess</b></a></li>
-                        <li><a href=""><b>Info on Chess</b></a>
+                        <img src="pics/close.png" alt="close-button" onclick="hideMenu()">
+                        <li><a href="">Why Chess?</a></li>
+                        <div class="main-seperation"></div>
+                        <li><a href="">Learn Chess</a></li>
+                        <div class="main-seperation"></div>
+                        <li><a href="">About Chess</a>
+                        <div class="main-seperation"></div>    
+                        
                             <div class="sub-menu">
+                            
                                 <ul>
+                                
                                     <li><a href="">Governing Body</a></li>
+                                    
+                                    <div class="seperation"></div>
+                                    
                                     <li><a href="">Champions</a></li>
+                                
                                 </ul>
+                            
                             </div>
+                        
                         </li>
+                    
                     </ul>
+                    
                 </div>
-                <div class="menubtn" onclick="showMenu()"><img src="pics/list.png" alt="Menu Button"></div>
-
-            </nav>
+                
+                <div class="menu-btn"><img src="pics/list.png" alt="menu-button" onclick="showMenu()"></div>
+                
+            </div>
             
             <div class="main-text">
-                
+
                 <h1><b>What is ChessWebsite.com?</b></h1>
-                
+
                 <p>ChessWebsite.com is a website dedicated to spread the joy of chess to people around the world.</p>
                 
-                <div class="readmorebtn">
-
-                    <a href="#whychess">Read More</a>
-
-                </div>
+                <a href=""><div class="readmore-btn">
+            
+                    <p>Read More</p>
+            
+                </div></a>
                 
             </div>
             
-
-        </section>
-        
-        <section id="whychess">
-            
-            <div class="heading"><b>Why Chess?</b></div>
-            
-            <div class="text-boxes">
-                
-                <div class="row-1">
-                
-                    <div class="text-box">
-
-                        <h1>Chess develops memory</h1>
-
-                        <p>The chess theory is complicated and many players memorize different opening variations. You will also learn  to recognize various patterns and remember lengthy variations.</p>
-
-                    </div>
-
-                    <div class="text-box">
-
-                        <h1>Chess is a game for people of all ages.</h1>
-
-                        <p>You can learn to play at any age and in chess, unlike in many other sports, you don't ever have to retire. Age is also not a factor when you're looking for an opponent --young can play old and old can play young.</p>
-
-                    </div>                
-
-                    <div class="text-box">
-
-                        <h1>Chess promotes imagination and creativity</h1>
-
-                        <p>It encourages you to be inventive. There are an indefinite amount of beautiful combinations yet to be constructed.</p>
-
-                    </div>
-                    
-                </div>  
-                
-                <div class="row-2">
-                
-                    <div class="text-box">
-
-                        <h1>Chess inspires self-motivation</h1>
-
-                        <p>It encourages the search of the best move, the best plan, and the most beautiful continuation out of the endless possibilities. It encourages the everlasting aim towards progress, always steering to ignite the flame of victory.</p>
-
-                    </div>
-                    
-                    <div class="text-box">
-
-                        <h1>Chess and Psychology</h1>
-
-                        <p>Chess is a test of patience, nerves, will power and concentration. It enhances your ability to interact with other people. It tests your sportsmanship in a competitive environment.</p>
-
-                    </div>
-                    
-                    <div class="text-box">
-
-                        <h1>Chess teaches independence</h1>
-
-                        <p>You are forced to make important decisions influenced only by your own judgment.</p>
-
-                    </div>
-                    
-                </div>  
-                    
-            </div>
-            
-        </section>
+        </div>
         
         <script>
-            
-            menu = document.getElementById("navLinks")
+        
+            menu = document.getElementById("navMenu")
             
             function showMenu(){
-                menu.style.left = "-100px";
+                menu.style.display = "block";
+                menu.style.right = "0px";
             }
             
             function hideMenu(){
-                menu.style.left = "-350px";
+                menu.style.display = "none";
+                menu.style.right = "-200px";
             }
-            
-        </script>
+        
+        </script>        
         
     </body>
     
