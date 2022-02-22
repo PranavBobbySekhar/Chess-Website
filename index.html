@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     
     <head>
         
-        <title>ChessWebsite</title>
-        
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-control" content="public">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta name="author" content="Pranav Bobby">
+        
+        <title>ChessWebsite</title>
         
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,9 +165,9 @@
                 <h5>Have a query or request? Send your message to <a href="mailto:contactchesswebsite@gmail.com">contactchesswebsite@gmail.com</a> or fill out this form:</h5>
                 
                 <form name="contactform" method="POST" netlify>
-                    <p>Your Name: <input type="text" name="Name"></p>
-                    <p>Your Email: <input type="email" name="Email"></p>
-                    <p>Your Message: <br><textarea id="Message" name="Message"></textarea></p>
+                    <p>Your Name: <input type="text" name="Name" aria-label="name" required></p>
+                    <p>Your Email: <input type="email" name="Email" aria-label="email" required></p>
+                    <p>Your Message: <br><textarea id="Message" name="Message" aria-label="message" required></textarea></p>
                     <div class="submit"><input type="submit" value="Send"></div>
                 </form>
 
