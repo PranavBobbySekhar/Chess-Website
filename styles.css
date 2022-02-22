@@ -180,7 +180,7 @@ header {
 }
 
 .text-box:hover {
-    box-shadow: 0 0 20px 0px grey;
+    box-shadow: 0 0 25px 3px grey;
 }
 
 .text-box h1 {
@@ -202,7 +202,7 @@ header {
     flex-direction: column;
     align-items: center;
     color: black;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 .contact a {
@@ -259,6 +259,7 @@ header {
 .submit input {
     border: 1.5px solid black;
     margin-top: 5px;
+    margin-bottom: 7px;
     font-family: "Poppins";
     font-size: 80%;
 }
