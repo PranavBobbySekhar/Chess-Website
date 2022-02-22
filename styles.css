@@ -361,10 +361,11 @@ header {
     
     .footer {
         display: flex;
-        height: 10vh;
+        height: 70vh;
         background-color: lightblue;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
     }
 
     .contact {
@@ -373,5 +374,26 @@ header {
         width: 50vh;
         color: black;
         font-size: 140%;
+    }
+    
+    .contact form p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
+    
+    .contact form input {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #Message {
+        width: 350px;
+        margin-top: 0px;
+    }
+    
+    .submit {
+        margin-top: 25px;
     }
 }
