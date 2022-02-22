@@ -74,6 +74,10 @@ header {
     justify-content: center;
 }
 
+.menu ul li:first-child {
+    padding-left: 0px;
+}
+
 .sub-menu {
     position: absolute;
     border-radius: 5px;
