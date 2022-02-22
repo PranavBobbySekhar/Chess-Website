@@ -92,7 +92,6 @@ header {
     margin-bottom: 20px;
     margin-top: 20px;
     padding: 0;
-    width: 125px;
     text-align: center; 
     border-radius: 5px;
     padding: 10px;
@@ -190,16 +189,20 @@ header {
 
 .footer {
     display: flex;
-    height: 10vh;
+    height: auto;
     background-color: lightblue;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 .contact {
     display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     color: black;
-    font-size: 140%;
+    font-size: 100%;
 }
 
 .contact a {
@@ -208,6 +211,56 @@ header {
 
 .contact a:hover {
     color: red;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact form p {
+    margin: 20px;
+}
+
+.contact form p:first-child {
+    margin-top: 0px;
+}
+
+.contact form input {
+    width: 50%;
+    padding-left: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#Message {
+    width: 400px;
+    height: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.submit {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 200px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submit input {
+    border: 1.5px solid black;
+    margin-top: 5px;
+    font-family: "Poppins";
+    font-size: 80%;
 }
 
 @media(max-width:700px) {
