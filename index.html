@@ -17,6 +17,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="icon" href="pics/icon.png">
         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     </head>
     
     <body>
@@ -166,7 +168,7 @@
                 
                 <form name="contactform" method="POST" netlify>
                     <p>Your Name: <input type="text" name="Name" aria-label="name" required></p>
-                    <p>Your Email: <input type="email" name="Email" aria-label="email" required></p>
+                    <p>Your Email: <input type="email" name="Email" aria-label="email" id="Email" required></p>
                     <p>Your Message: <br><textarea id="Message" name="Message" aria-label="message" required></textarea></p>
                     <div class="submit"><input type="submit" value="Send"></div>
                 </form>
