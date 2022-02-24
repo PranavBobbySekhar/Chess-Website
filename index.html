@@ -18,7 +18,6 @@
         <link rel="icon" href="pics/icon.png">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
         
     </head>
     
@@ -177,7 +176,21 @@
             
             </div>
         
-        </section>      
+        </section>   
+        
+        <script>
+            
+            menu = document.getElementById("navMenu");
+            
+            function showMenu() {
+                menu.style.right = "0px";
+            }
+
+            function hideMenu() {
+                menu.style.right = "-200px";
+            }
+            
+        </script>
         
     </body>
     
